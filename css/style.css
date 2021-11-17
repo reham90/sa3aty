@@ -1533,5 +1533,8 @@
          margin: 0;
          padding: 0 !important;
     }
+    .language-2 .dropdown-content a{
+        margin:10px 0;
+    }
 }
  
