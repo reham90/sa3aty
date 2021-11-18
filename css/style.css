@@ -168,6 +168,12 @@
      html[dir="rtl"] .accordion h3{
          text-align: right;
     }
+    html[dir="rtl"] .down-arrow{
+        float: left;
+    }
+    html[dir="rtl"] .up-arrow{
+        float: left;
+    }
 }
 /*/
  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
@@ -345,6 +351,12 @@
      html[dir="ltr"] .copy p{
          font-size: 12px;
     }
+     html[dir="ltr"] .down-arrow{
+        float: right;
+    }
+    html[dir="ltr"] .up-arrow{
+        float: right;
+    }
 }
 /*****************************************************************************************************************************************/
  *{
@@ -428,7 +440,7 @@
 }
  .cart-section{
      display: flex;
-     align-items: center;
+    
      justify-content: flex-start;
      padding: 0;
      list-style: none;
@@ -478,7 +490,7 @@
      position: relative;
 }
  .change-position{
-     top:20px;
+     top:33px;
 }
  .dropdown-content:before{
      content: "";
@@ -614,7 +626,7 @@
      z-index: 9;
      transition: 0.5s;
      background: #fff;
-     left: 50%;
+     left: 40%;
      transform: translateX(-50%);
      padding: 18px 0;
      border-radius: 11px;
@@ -634,8 +646,12 @@
      opacity: 1;
 }
  .nav-dropdown li{
-     float: none;
+     float: none !important;
      margin-bottom: 15px;
+     padding: 0 !important;
+     width: 100%;
+     display: flex;
+     justify-content: center;
 }
  .nav-dropdown a{
      padding: 0 !important;
@@ -677,6 +693,7 @@
      .nav-nav ul li {
          float: none;
          width: 100%;
+         padding: 0;
     }
      .nav-nav ul li a {
          padding: 15px;
@@ -720,7 +737,7 @@
      position: absolute;
      z-index: 999;
      font-size: 16px;
-     top: -69px;
+     top: -88px;
 }
  .nav-list{
      padding: 0;
@@ -731,7 +748,7 @@
          margin-bottom: 20px;
     }
      .nav-nav ul{
-         padding: 105px 30px 30px;
+         padding: 127px 30px 30px;
     }
 }
 /*/
@@ -865,6 +882,7 @@
      color: #fff;
      font-size: 13px;
      font-weight: bold;
+     text-transform: uppercase;
 }
  .product .owl-item img{
      display: flex;
@@ -944,6 +962,7 @@
 }
  .product-details{
      padding:20px 0;
+     border-radius: 0 0 15px 15px;
 }
  .bg-white{
      background: #fff;
@@ -1022,7 +1041,7 @@
      margin: 0;
 }
  .features{
-     padding-bottom: 67px;
+     padding:66px 0 67px;
 }
 /*/
  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
@@ -1216,7 +1235,7 @@
 }
  .up-arrow{
      display: none;
-     margin-top: 12px;
+     
 }
 /*/
  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
@@ -1253,13 +1272,13 @@
          color: #fff;
     }
      .search-block-in-mobile{
-         position: absolute;
+        display: block;
          width: 100%;
          left: 0;
          right: 0;
          z-index: 9;
          background: #fff;
-         display: none;
+         
     }
      .search-in-mobile .search-box {
          position: absolute;
@@ -1299,24 +1318,32 @@
          left: 0;
          right: 0;
          transform: translateX(0);
-         margin-top: 0 !important;
+         margin-top: -16px !important;
+         background: transparent;
+         box-shadow: none;
+         padding: 0;
     }
      .language-2 .dropdown-content:before{
          border-width: 0;
     }
+    
      .nav-dropdown:before{
          content: "";
          border: 0;
     }
+    
      .nav-dropdown{
-         background: transparent;
-         box-shadow: none;
-         top:0;
-         right: 0;
+         background: transparent !important;
+         box-shadow: none !important;
+         /* top: 0 !important; */
+         /* right: -17px !important; */
          display: none;
-         position: static;
-         padding: 0 15px;
-         width: 200px;
+         position: static !important;
+         padding: 0 15px !important;
+         width: 200px !important;
+         margin-left: 93px !important;
+         margin-right: -103px !important;
+         display: table;
     }
      .nav-dropdown ul{
          display:block;
@@ -1358,7 +1385,7 @@
          margin-bottom: 33px;
     }
      .pro-name{
-         font-size: 15px;
+         font-size: 14px;
          text-align: center;
     }
      .small-banners{
@@ -1371,7 +1398,7 @@
          margin-bottom: 7px;
     }
      .price span{
-         font-size: 15px;
+         font-size: 16px;
          width: 100%;
          display: flex;
          justify-content: center;
@@ -1534,7 +1561,9 @@
          padding: 0 !important;
     }
     .language-2 .dropdown-content a{
-        margin:10px 0;
+        margin: 10px 0;
+    }
+    .nav-dropdown li{
+        margin-bottom: 0;
     }
 }
- 

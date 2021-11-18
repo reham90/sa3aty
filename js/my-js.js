@@ -10,23 +10,19 @@ $(document).ready(function() {
                 $(this).siblings('.nav-dropdown').toggle();
                 // Close one dropdown when selecting another
                 $('.nav-dropdown').not($(this).siblings()).hide();
+                 $(this).children('i').toggle();
                 e.stopPropagation();
             });
             // Clicking away from dropdown will remove the dropdown class
 
             $('.re-dropdown').click(function(e) {
                 $('.drop-mobile').toggle();
-                $(this).children('i').toggle();
+               
 
                 // Close one dropdown when selecting another
             });
 
-            $('nav ul li a:not(:only-child)').click(function(e) {
-
-                $(this).children('i').toggle();
-
-                // Close one dropdown when selecting another
-            });
+           
 
             // Toggle open and close nav styles on click
             $('.nav-toggle').click(function() {
@@ -268,14 +264,3 @@ $(document).ready(function() {
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// search for mobile //
-$(".search-icon").click(function() {
-    $(".search-block-in-mobile").toggle();
-    $(".search-input").focus();
-});
-
-// end search for mobile // 
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
