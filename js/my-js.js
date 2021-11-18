@@ -17,7 +17,7 @@ $(document).ready(function() {
 
             $('.re-dropdown').click(function(e) {
                 $('.drop-mobile').toggle();
-               
+               $('.nav-dropdown').css("display" , "none");
 
                 // Close one dropdown when selecting another
             });
