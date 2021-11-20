@@ -7,7 +7,7 @@ $(document).ready(function() {
         $(function() { // DOM ready
             // If a link has a dropdown, add sub menu toggle.
             $('nav ul li a').click(function(e) {
-                $('nav ul li a').removeClass("active");
+               $('nav ul li a').not($(this)).removeClass("active");
                 $(this).toggleClass("active");
                 $(this).siblings('.nav-dropdown').slideToggle(200);
                 
@@ -24,6 +24,7 @@ $(document).ready(function() {
          
 
             $('.re-dropdown').click(function(e) {
+                $('a').not($(this)).removeClass("active");
                 $('.drop-mobile').toggle();
                $('.nav-dropdown').hide();
               
