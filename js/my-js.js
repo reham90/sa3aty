@@ -7,13 +7,13 @@ $(document).ready(function() {
         $(function() { // DOM ready
             // If a link has a dropdown, add sub menu toggle.
             $('nav ul li a').click(function(e) {
-                
+                this.classList.toggle("active");
                 $(this).siblings('.nav-dropdown').slideToggle(200);
                 $(this).children('i').toggle();
 
                 // Close one dropdown when selecting another
                 $('.nav-dropdown').not($(this).siblings()).hide();
-                $(this).children('i').toggle();
+
                  
                 e.stopPropagation();
             });
