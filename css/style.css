@@ -1392,9 +1392,10 @@
          box-shadow: none !important;
          display: none;
          position: static !important;
-        
+        visibility: visible !important;
+        opacity: 1 !important;
          display: table;
-         
+         transition: none !important;
     }
 .nav-dropdown li{
     justify-content: flex-start;
@@ -1631,4 +1632,18 @@
     .nav-dropdown li{
         margin-bottom: 0;
     }
+    
+    nav ul li a .up-arrow{
+        display: none;
+    }
+     nav ul li a .down-arrow{
+        display: block;
+    }
+    nav ul li a.active .up-arrow{
+        display: block;
+    }
+     nav ul li a.active .down-arrow{
+        display: none;
+    }
+  
 }
