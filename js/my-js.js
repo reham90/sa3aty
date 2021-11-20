@@ -7,7 +7,8 @@ $(document).ready(function() {
         $(function() { // DOM ready
             // If a link has a dropdown, add sub menu toggle.
             $('nav ul li a:not(:only-child)').click(function(e) {
-                $(this).siblings('.nav-dropdown').toggle();
+                $(this).siblings('.nav-dropdown').slideToggle(200);
+
                 // Close one dropdown when selecting another
                 $('.nav-dropdown').not($(this).siblings()).hide();
                  $(this).children('i').toggle();
@@ -18,11 +19,12 @@ $(document).ready(function() {
             $('.re-dropdown').click(function(e) {
                 $('.drop-mobile').toggle();
                $('.nav-dropdown').css("display" , "none");
+                
+
 
                 // Close one dropdown when selecting another
             });
 
-           
 
             // Toggle open and close nav styles on click
             $('.nav-toggle').click(function() {
