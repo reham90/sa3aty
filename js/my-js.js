@@ -6,19 +6,26 @@ $(document).ready(function() {
     (function($) { // Begin jQuery36.
         $(function() { // DOM ready
             // If a link has a dropdown, add sub menu toggle.
-            $('nav ul li a:not(:only-child)').click(function(e) {
+            $('nav ul li a').click(function(e) {
+                
                 $(this).siblings('.nav-dropdown').slideToggle(200);
+                $(this).children('i').toggle();
 
                 // Close one dropdown when selecting another
                 $('.nav-dropdown').not($(this).siblings()).hide();
-                 $(this).children('i').toggle();
+                $(this).children('i').toggle();
+                 
                 e.stopPropagation();
             });
             // Clicking away from dropdown will remove the dropdown class
 
+            
+         
+
             $('.re-dropdown').click(function(e) {
                 $('.drop-mobile').toggle();
-               $('.nav-dropdown').css("display" , "none");
+               $('.nav-dropdown').hide();
+              
                 
 
 

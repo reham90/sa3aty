@@ -108,6 +108,12 @@
  html[dir="rtl"] .newsletter button{
      left: 0;
 }
+ html[dir="rtl"] .payment img{
+    margin-left: 15px;
+    }
+     html[dir="rtl"] .payment img:last-child{
+    margin-left: 0;
+    }
  html[dir="rtl"] .footer input{
      padding-right: 15px;
 }
@@ -180,6 +186,9 @@
          width: 235px !important;
          
          margin-right: -155px !important;
+    }
+    html[dir="rtl"] .payment img{
+        margin-left: 0;
     }
 }
 /*/
@@ -300,6 +309,12 @@
  html[dir="ltr"] .newsletter button{
      right:0;
 }
+ html[dir="ltr"] .payment img{
+    margin-right: 15px;
+    }
+     html[dir="ltr"] .payment img:last-child{
+    margin-right: 0;
+    }
  html[dir="ltr"] .footer input{
      padding-left: 15px;
 }
@@ -369,6 +384,9 @@
     width: 222px !important;
     margin-left: 98px !important;
 
+    }
+    html[dir="ltr"] .payment img{
+        margin-right: 0;
     }
 }
 /*****************************************************************************************************************************************/
@@ -1239,11 +1257,14 @@
      display: flex;
      justify-content: center;
      align-items: center;
+     margin-bottom: 12px;
 }
+
  .copy{
      display: flex;
      justify-content: center;
      align-items: center;
+
 }
  .copy p{
      font-size: 13px;
@@ -1528,9 +1549,13 @@
      .footer span{
          text-align: center;
     }
-     .payment img{
-         width: 100%;
-         margin-bottom: 15px;
+     .payment{
+
+             margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-gap: 15px;
+    margin-bottom: 25px;
     }
      .copy{
          padding-bottom: 15px;
@@ -1601,7 +1626,7 @@
          padding: 0 !important;
     }
     .language-2 .dropdown-content a{
-        margin: 10px 0;
+        margin: 10px 15px ;
     }
     .nav-dropdown li{
         margin-bottom: 0;
