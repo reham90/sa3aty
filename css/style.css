@@ -28,7 +28,7 @@
 }
  html[dir="rtl"] .nav-nav ul li{
      float: right;
-     text-align: right;
+     text-align: center;
 }
  html[dir="rtl"] .discount{
      left: 0;
@@ -150,6 +150,7 @@
     }
      html[dir="rtl"] .nav-nav ul li{
          padding: 0;
+         text-align: right;
     }
      html[dir="rtl"] .nav-nav ul li a, html[dir="rtl"] .nav-nav ul li a:visited{
          padding: 0;
@@ -215,7 +216,7 @@
 }
  html[dir="ltr"] .nav-nav ul li{
      float: left;
-     text-align: left;
+     text-align: center;
 }
  html[dir="ltr"] .discount{
      right: 0;
@@ -333,6 +334,10 @@
     }
      html[dir="ltr"] .language-2 i{
          padding-left: 7px;
+    }
+     html[dir="ltr"] .nav-nav ul li{
+        
+         text-align: left;
     }
      html[dir="ltr"] .nav-nav ul li a, html[dir="ltr"] .nav-nav ul li a:visited{
          padding: 0;

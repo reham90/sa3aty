@@ -6,8 +6,8 @@ $(document).ready(function() {
     (function($) { // Begin jQuery36.
         $(function() { // DOM ready
             // If a link has a dropdown, add sub menu toggle.
-            $('.nav-nav ul li a').click(function(e) {
-               $('.nav-nav ul li a').not($(this)).removeClass("active");
+            $('.menu-link').click(function(e) {
+               $('.menu-link').not($(this)).removeClass("active");
                 $(this).toggleClass("active");
                 $(this).siblings('.nav-dropdown').slideToggle(200);
                 
@@ -24,7 +24,7 @@ $(document).ready(function() {
          
 
             $('.re-dropdown').click(function(e) {
-                $('a').not($(this)).removeClass("active");
+                $('.menu-link').not($(this)).removeClass("active");
                 $('.drop-mobile').toggle();
                $('.nav-dropdown').hide();
               
@@ -103,8 +103,7 @@ $(document).ready(function() {
 
 
     // start slider carousel //
-    var owl = $('.slider');
-    owl.owlCarousel({
+     $('.slider').owlCarousel({
         margin: 10,
         nav: true,
         rtl: document.dir == 'rtl' ? true : false,
@@ -135,8 +134,7 @@ $(document).ready(function() {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // product carousel //
 
-    var owl = $('.most-watched');
-    owl.owlCarousel({
+    $('.most-watched').owlCarousel({
 
         nav: true,
         rtl: document.dir == 'rtl' ? true : false,
@@ -166,8 +164,7 @@ $(document).ready(function() {
 
 // bestseller carousel //
 
-    var owl = $('.bestseller');
-    owl.owlCarousel({
+    $('.bestseller').owlCarousel({
 
         nav: true,
         rtl: document.dir == 'rtl' ? true : false,
@@ -199,8 +196,7 @@ $(document).ready(function() {
 
     // last-arrivals carousel //
 
-    var owl = $('.last-arrivals');
-    owl.owlCarousel({
+    $('.last-arrivals').owlCarousel({
 
         nav: true,
         rtl: document.dir == 'rtl' ? true : false,
@@ -233,8 +229,7 @@ $(document).ready(function() {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // last-arrivals carousel //
 
-    var owl = $('.features');
-    owl.owlCarousel({
+     $('.features').owlCarousel({
 
         nav: true,
         rtl: document.dir == 'rtl' ? true : false,
@@ -268,8 +263,7 @@ $(document).ready(function() {
     // testimonial carousel //
 
 
-    var owl = $('.testimonial');
-    owl.owlCarousel({
+    $('.testimonial').owlCarousel({
 
         nav: false,
         rtl: document.dir == 'rtl' ? true : false,
