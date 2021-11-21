@@ -42,7 +42,8 @@
                </div>
                <div class="hidden-xs">
                   <div class="search-box">
-                     <input 
+                     <input
+                        class="search-input" 
                         type="text" 
                         placeholder="search ..."  
                         >
@@ -128,7 +129,7 @@
                            alt="flag">
                         english
                         <i class="fas fa-sort-down down-arrow"></i>
-                        <i class="fas fa-sort-up up-arrow"></i>
+                        
                         </button>
                         <div  class="dropdown-content drop-mobile">
                            <a href="index-eng.html">english</a>
@@ -143,7 +144,7 @@
                   <li>
                      <a href="#">new arrivals</a>
                   </li>
-                  <li>
+                  <li class="has-dropdown">
                      <a href="#!">men watches <i class="fas fa-chevron-down down-arrow" ></i> <i class="fas fa-chevron-up up-arrow" ></i></a>
                      <ul class="nav-dropdown ">
                        
@@ -154,7 +155,7 @@
                         
                     </ul>
                   </li>
-                  <li>
+                  <li class="has-dropdown">
                      <a href="#!">women watches <i class="fas fa-chevron-down down-arrow" ></i> <i class="fas fa-chevron-up up-arrow" ></i></a>
                     <ul class="nav-dropdown ">
                        
@@ -165,7 +166,7 @@
                         
                     </ul>
                   </li>
-                  <li>
+                  <li class="has-dropdown">
                      <a href="#!">watch sets <i class="fas fa-chevron-down down-arrow" ></i> <i class="fas fa-chevron-up up-arrow" ></i></a>
                      <ul class="nav-dropdown ">
                        
@@ -176,7 +177,7 @@
                         
                     </ul>
                   </li>
-                  <li>
+                  <li class="has-dropdown">
                      <a href="#!">brands <i class="fas fa-chevron-down down-arrow" ></i> <i class="fas fa-chevron-up up-arrow" ></i></a>
                      <ul class="nav-dropdown ">
                        
@@ -199,7 +200,7 @@
       </section>
       <!-- end navigation -->
       <!-- start slider carousel -->
-      <div class="owl-carousel slider owl-theme">
+      <div class="owl-carousel re-carousel slider owl-theme">
          <div class="item">
             <a href="#">
             <img
@@ -287,7 +288,7 @@
          <div class="container ">
             <div class="products ">
                <h1 class="wow fadeInDown">most watched</h1>
-               <div class="owl-carousel product  owl-theme wow fadeInDown">
+               <div class="owl-carousel re-carousel product most-watched owl-theme wow fadeInDown">
                   <div class="item">
                      <div class="product-block ">
                         <div class="product-image">
@@ -405,7 +406,7 @@
       <section class="container ">
          <div class="products ">
             <h1 class="wow fadeInDown">new arrivals </h1>
-            <div class="owl-carousel last-arrivals  owl-theme wow fadeInDown">
+            <div class="owl-carousel re-carousel last-arrivals  owl-theme wow fadeInDown">
                <div class="item">
                   <div class="product-block ">
                      <div class="product-image">
@@ -536,7 +537,7 @@
       <div class="container ">
          <div class="products ">
             <h1 class="wow fadeInDown">best seller </h1>
-            <div class="owl-carousel product  owl-theme wow fadeInDown">
+            <div class="owl-carousel re-carousel product bestseller owl-theme wow fadeInDown">
                <div class="item">
                   <div class="product-block ">
                      <div class="product-image">
@@ -651,7 +652,7 @@
       <!-- end products carousel -->
       <!-- start features carousel  -->
       <section class="container ">
-         <div class="owl-carousel features  owl-theme wow fadeInDown">
+         <div class="owl-carousel re-carousel features  owl-theme wow fadeInDown">
             <div class="item">
                <div class="feature-block ">
                   <i class="fas fa-star"></i>
@@ -692,11 +693,11 @@
       </section>
       <!-- end features carousel -->
       <!-- start testimonial carousel  -->
-      <section class="most-watched-section">
+      <section class="testimonial-section">
          <div class="container ">
             <div class="products ">
                <h1 class="wow fadeInDown">testimonials  </h1>
-               <div class="owl-carousel testimonial  owl-theme wow fadeInDown">
+               <div class="owl-carousel re-carousel testimonial  owl-theme wow fadeInDown">
                   <div class="item">
                      <div class="testimonial-block">
                         <div class="user-photo">
@@ -742,13 +743,13 @@
       <footer >
          <div class="container">
             <div class="footer-content">
-               <div class="footer">
-                  <button class="accordion">
-                  <span>information</span>
+               <div class="footer-block">
+                  <button class="accordion footer-accordion">
+                  <span class="footer-block-title">information</span>
                   <i class="fas fa-angle-down hidden-lg hidden-md left-right-arrow"></i>
                   <i class="fas fa-angle-up hidden-lg hidden-md down-arrow-2"></i>
                   </button>
-                  <ul class="footer-list panel">
+                  <ul class="footer-list panel footer-dropdown">
                      <li><a href="#">about us</a></li>
                      <li><a href="#">shipping and delivery </a></li>
                      <li><a href="#">bank accounts </a></li>
@@ -756,47 +757,47 @@
                      <li><a href="#">terms and conditions </a></li>
                   </ul>
                </div>
-               <div class="footer">
-                  <button class="accordion">
-                  <span>customer service</span>
+               <div class="footer-block">
+                  <button class="accordion footer-accordion">
+                  <span class="footer-block-title">customer service</span>
                   <i class="fas fa-angle-down hidden-lg hidden-md left-right-arrow"></i>
                   <i class="fas fa-angle-up hidden-lg hidden-md down-arrow-2"></i>
                   </button>
-                  <ul class="footer-list panel">
+                  <ul class="footer-list panel footer-dropdown">
                      <li><a href="#">contact us </a></li>
                      <li><a href="#">return order</a></li>
                      <li><a href="#">site map</a></li>
                   </ul>
                </div>
-               <div class="footer">
-                  <button class="accordion">
-                  <span>extras</span>
+               <div class="footer-block">
+                  <button class="accordion footer-accordion">
+                  <span class="footer-block-title">extras</span>
                   <i class="fas fa-angle-down hidden-lg hidden-md left-right-arrow"></i>
                   <i class="fas fa-angle-up hidden-lg hidden-md down-arrow-2"></i>
                   </button>
-                  <ul class="footer-list panel">
+                  <ul class="footer-list panel footer-dropdown">
                      <li><a href="#">companies </a></li>
                      <li><a href="#">gift vouchers </a></li>
                      <li><a href="#">commission system </a></li>
                      <li><a href="#"> special offers</a></li>
                   </ul>
                </div>
-               <div class="footer">
-                  <button class="accordion">
-                  <span>my account</span>
+               <div class="footer-block">
+                  <button class="accordion footer-accordion">
+                  <span class="footer-block-title">my account</span>
                   <i class="fas fa-angle-down hidden-lg hidden-md left-right-arrow"></i>
                   <i class="fas fa-angle-up hidden-lg hidden-md down-arrow-2"></i>
                   </button>
-                  <ul class="footer-list panel">
+                  <ul class="footer-list panel footer-dropdown">
                      <li><a href="#">my account</a></li>
                      <li><a href="#">my orders </a></li>
                      <li><a href="#">my wishlist </a></li>
                      <li><a href="#">mailing list   </a></li>
                   </ul>
                </div>
-               <div class="footer">
-                  <span class="make-center">newsletter </span>
-                  <p>join our newsletter to get all news </p>
+               <div class="footer-block">
+                  <span class="make-center footer-block-title">newsletter </span>
+                  <p class="footer-block-text">join our newsletter to get all news </p>
                   <div class="newsletter">
                      <input  type="text" name="text" placeholder="enter your e-mail">
                      <button>join now</button>

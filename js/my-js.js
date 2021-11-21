@@ -6,8 +6,8 @@ $(document).ready(function() {
     (function($) { // Begin jQuery36.
         $(function() { // DOM ready
             // If a link has a dropdown, add sub menu toggle.
-            $('nav ul li a').click(function(e) {
-               $('nav ul li a').not($(this)).removeClass("active");
+            $('.nav-nav ul li a').click(function(e) {
+               $('.nav-nav ul li a').not($(this)).removeClass("active");
                 $(this).toggleClass("active");
                 $(this).siblings('.nav-dropdown').slideToggle(200);
                 
@@ -37,15 +37,15 @@ $(document).ready(function() {
 
             // Toggle open and close nav styles on click
             $('.nav-toggle').click(function() {
-                $(".re-show").toggle();
+                
                 $(".re-hide").css("display", "block");
                 $(".cover").toggle();
             });
             $('.re-show').click(function(event) {
                 if (document.dir == "rtl") {
-                    $('nav ').css("right", "0");
+                    $('.nav-nav ').css("right", "0");
                 } else {
-                    $('nav ').css("left", "0");
+                    $('.nav-nav ').css("left", "0");
 
                 }
                 $("body").css("overflow", "hidden");
@@ -62,7 +62,7 @@ $(document).ready(function() {
                 event.preventDefault();
                 $("body").css("overflow", "auto");
                 $(".cover").toggle();
-                $(".re-show").toggle();
+               
             });
             $('.cover').on('click', function() {
                 $(".re-hide").click();
@@ -78,20 +78,20 @@ $(document).ready(function() {
 
     // start footer accordion  //
     if ($(window).width() < 991) {
-        var acc = document.getElementsByClassName("accordion");
+        var acc = document.getElementsByClassName("footer-accordion");
         var i;
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function myFunction(y) {
                 this.classList.toggle("active");
-                var panel = this.nextElementSibling;
+                var footerDropdown = this.nextElementSibling;
 
-                $(this).siblings(".panel").slideToggle(200);
+                $(this).siblings(".footer-dropdown").slideToggle(200);
 
 
 
             });
         }
-        $(".accordion").click(function() {
+        $(".footer-accordion").click(function() {
             $(this).children('i').toggle();
 
         });
@@ -135,7 +135,7 @@ $(document).ready(function() {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // product carousel //
 
-    var owl = $('.product');
+    var owl = $('.most-watched');
     owl.owlCarousel({
 
         nav: true,
@@ -164,7 +164,36 @@ $(document).ready(function() {
 
     // end product carousel //
 
+// bestseller carousel //
 
+    var owl = $('.bestseller');
+    owl.owlCarousel({
+
+        nav: true,
+        rtl: document.dir == 'rtl' ? true : false,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        navText: ["<i class='fas fa-angle-right right-arrow'></i>", "<i class='fas fa-angle-left left-arrow'></i>"],
+        responsive: {
+            0: {
+                margin: 15,
+                items: 2
+            },
+            600: {
+                margin: 30,
+                items: 2
+            },
+            1200: {
+                margin: 30,
+                items: 4
+            }
+
+        }
+    })
+
+    // end bestseller carousel //
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

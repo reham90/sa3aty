@@ -42,7 +42,8 @@
                </div>
                <div class="hidden-xs">
                   <div class="search-box">
-                     <input 
+                     <input
+                        class="search-input" 
                         type="text" 
                         placeholder="عن ماذا تبحث  ..."  
                         >
@@ -127,7 +128,7 @@
                            alt="flag">
                         العربية 
                         <i class="fas fa-sort-down down-arrow"></i>
-                        <i class="fas fa-sort-up up-arrow"></i>
+                        
                         </button>
                         <div  class="dropdown-content drop-mobile">
                            <a href="index.html">العربية </a>
@@ -141,7 +142,7 @@
                   <li>
                      <a href="#">وصل حديثا</a>
                   </li>
-                  <li>
+                  <li class="has-dropdown">
                      <a href="#!">ساعات رجالية  <i class="fas fa-chevron-down down-arrow" ></i> <i class="fas fa-chevron-up up-arrow" ></i></a>
                      <ul class="nav-dropdown ">
                         
@@ -152,7 +153,7 @@
                         </ul>
                     
                   </li>
-                  <li>
+                  <li class="has-dropdown">
                      <a href="#!">ساعات نسائية  <i class="fas fa-chevron-down down-arrow" ></i> <i class="fas fa-chevron-up up-arrow" ></i></a>
                       <ul class="nav-dropdown ">
                         
@@ -162,7 +163,7 @@
                            <li><a href="#">لونجبو   </a></li>
                         </ul>
                   </li>
-                  <li>
+                  <li class="has-dropdown">
                      <a href="#!">أطقم ساعات   <i class="fas fa-chevron-down down-arrow" ></i> <i class="fas fa-chevron-up up-arrow" ></i></a>
                      <ul class="nav-dropdown ">
                         
@@ -172,7 +173,7 @@
                            <li><a href="#">لونجبو   </a></li>
                         </ul>
                   </li>
-                  <li>
+                  <li class="has-dropdown">
                      <a href="#!">الماركات   <i class="fas fa-chevron-down down-arrow" ></i> <i class="fas fa-chevron-up up-arrow" ></i></a>
                      <ul class="nav-dropdown ">
                         
@@ -194,7 +195,7 @@
       </section>
       <!-- end navigation -->
       <!-- start slider carousel -->
-      <div class="owl-carousel slider owl-theme">
+      <div class="owl-carousel re-carousel slider owl-theme">
          <div class="item">
             <a href="#">
             <img
@@ -282,7 +283,7 @@
          <div class="container ">
             <div class="products ">
                <h1 class="wow fadeInDown">الأكثر مشاهدة  </h1>
-               <div class="owl-carousel product  owl-theme wow fadeInDown">
+               <div class="owl-carousel re-carousel product most-watched owl-theme wow fadeInDown">
                   <div class="item">
                      <div class="product-block ">
                         <div class="product-image">
@@ -400,7 +401,7 @@
       <section class="container ">
          <div class="products ">
             <h1 class="wow fadeInDown">وصل حديثا   </h1>
-            <div class="owl-carousel last-arrivals  owl-theme wow fadeInDown">
+            <div class="owl-carousel re-carousel last-arrivals  owl-theme wow fadeInDown">
                <div class="item">
                   <div class="product-block ">
                      <div class="product-image">
@@ -531,7 +532,7 @@
       <div class="container ">
          <div class="products ">
             <h1 class="wow fadeInDown">الأكثر مبيعا  </h1>
-            <div class="owl-carousel product  owl-theme wow fadeInDown">
+            <div class="owl-carousel re-carousel product bestseller  owl-theme wow fadeInDown">
                <div class="item">
                   <div class="product-block ">
                      <div class="product-image">
@@ -646,7 +647,7 @@
       <!-- end products carousel -->
       <!-- start features carousel  -->
       <section class="container ">
-         <div class="owl-carousel features  owl-theme wow fadeInDown">
+         <div class="owl-carousel re-carousel features  owl-theme wow fadeInDown">
             <div class="item">
                <div class="feature-block ">
                   <i class="fas fa-star"></i>
@@ -687,11 +688,11 @@
       </section>
       <!-- end features carousel -->
       <!-- start testimonial carousel  -->
-      <section class="most-watched-section">
+      <section class="testimonial-section">
          <div class="container ">
             <div class="products ">
                <h1 class="wow fadeInDown">آراء العملاء   </h1>
-               <div class="owl-carousel testimonial  owl-theme wow fadeInDown">
+               <div class="owl-carousel re-carousel testimonial  owl-theme wow fadeInDown">
                   <div class="item">
                      <div class="testimonial-block">
                         <div class="user-photo">
@@ -734,13 +735,13 @@
       <footer >
          <div class="container">
             <div class="footer-content">
-               <div class="footer">
-                  <button class="accordion">
-                  <span>معلومات  </span>
+               <div class="footer-block">
+                  <button class="accordion footer-accordion">
+                  <span class="footer-block-title">معلومات  </span>
                   <i class="fas fa-angle-down hidden-lg hidden-md left-right-arrow"></i>
                   <i class="fas fa-angle-up hidden-lg hidden-md down-arrow-2"></i>
                   </button>
-                  <ul class="footer-list panel">
+                  <ul class="footer-list panel footer-dropdown">
                      <li><a href="#">من نحن </a></li>
                      <li><a href="#">الشحن والتوصيل  </a></li>
                      <li><a href="#">الحسابات البنكية   </a></li>
@@ -748,47 +749,47 @@
                      <li><a href="#">شروط الإستخدام   </a></li>
                   </ul>
                </div>
-               <div class="footer">
-                  <button class="accordion">
-                  <span>خدمة العملاء </span>
+               <div class="footer-block">
+                  <button class="accordion footer-accordion">
+                  <span class="footer-block-title">خدمة العملاء </span>
                   <i class="fas fa-angle-down hidden-lg hidden-md left-right-arrow"></i>
                   <i class="fas fa-angle-up hidden-lg hidden-md down-arrow-2"></i>
                   </button>
-                  <ul class="footer-list panel">
+                  <ul class="footer-list panel footer-dropdown">
                      <li><a href="#">اتصل بنا</a></li>
                      <li><a href="#">إرجاع الطلب  </a></li>
                      <li><a href="#">خريطة الموقع  </a></li>
                   </ul>
                </div>
-               <div class="footer">
-                  <button class="accordion">
-                  <span>إضافات  </span>
+               <div class="footer-block">
+                  <button class="accordion footer-accordion">
+                  <span class="footer-block-title">إضافات  </span>
                   <i class="fas fa-angle-down hidden-lg hidden-md left-right-arrow"></i>
                   <i class="fas fa-angle-up hidden-lg hidden-md down-arrow-2"></i>
                   </button>
-                  <ul class="footer-list panel">
+                  <ul class="footer-list panel footer-dropdown">
                      <li><a href="#">الشركات  </a></li>
                      <li><a href="#">قسائم الهدايا  </a></li>
                      <li><a href="#">نظام العمولة  </a></li>
                      <li><a href="#"> العروض المميزة  </a></li>
                   </ul>
                </div>
-               <div class="footer">
-                  <button class="accordion">
-                  <span>حسابي</span>
+               <div class="footer-block">
+                  <button class="accordion footer-accordion">
+                  <span class="footer-block-title">حسابي</span>
                   <i class="fas fa-angle-down hidden-lg hidden-md left-right-arrow"></i>
                   <i class="fas fa-angle-up hidden-lg hidden-md down-arrow-2"></i>
                   </button>
-                  <ul class="footer-list panel">
+                  <ul class="footer-list panel footer-dropdown">
                      <li><a href="#">حسابي</a></li>
                      <li><a href="#">طلباتي  </a></li>
                      <li><a href="#">قائمة رغباتي  </a></li>
                      <li><a href="#">القائمة البريدية    </a></li>
                   </ul>
                </div>
-               <div class="footer">
-                  <span class="make-center">النشرة البريدية  </span>
-                  <p>اشترك في نشرة الأخبار ليصلك كل جديد  </p>
+               <div class="footer-block">
+                  <span class="make-center footer-block-title">النشرة البريدية  </span>
+                  <p class="footer-block-text">اشترك في نشرة الأخبار ليصلك كل جديد  </p>
                   <div class="newsletter">
                      <input  type="text" name="text" placeholder="ادخل بريدك الإلكتروني  ">
                      <button>اشترك الآن  </button>
